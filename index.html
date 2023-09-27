@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test DISC</title>
+    <style>
+        /* Ajoutez votre CSS ici pour styliser la page */
+        /* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #007acc;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+#disc-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #005b9f;
+}
+
+#results {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les résultats */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Test DISC</h1>
+    <form id="disc-form">
+        <!-- Question 1 -->
+        <label for="q1">Question 1 : Choisissez la réponse qui vous décrit le mieux.</label>
+        <select id="q1">
+            <option value="D">Je prends souvent les commandes et je suis déterminé(e).</option>
+            <option value="I">J'aime socialiser et influencer les autres.</option>
+            <option value="S">Je préfère la stabilité et la routine.</option>
+            <option value="C">Je suis méticuleux(se) et soucieux(se) des détails.</option>
+        </select>
+
+        <!-- Question 2 -->
+        <label for="q2">Question 2 : Choisissez la réponse qui vous décrit le mieux.</label>
+        <select id="q2">
+            <option value="D">J'aime prendre des décisions rapidement.</option>
+            <option value="I">Je suis spontané(e) et enthousiaste.</option>
+            <option value="S">J'apprécie la prévisibilité et la sécurité.</option>
+            <option value="C">Je suis persévérant(e) et exigeant(e) envers moi-même.</option>
+        </select>
+
+        <!-- Question 3 -->
+        <label for="q3">Question 3 : Choisissez la réponse qui vous décrit le mieux.</label>
+        <select id="q3">
+            <option value="D">Je suis déterminé(e) à atteindre mes objectifs, peu importe les obstacles.</option>
+            <option value="I">J'aime être le centre d'attention et divertir les autres.</option>
+            <option value="S">J'essaie de maintenir un environnement paisible et harmonieux.</option>
+            <option value="C">Je suis attentif(ve) aux détails et aux règles.</option>
+        </select>
+<!-- Question 4 -->
+<label for="q4">Question 4 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q4">
+    <option value="D">Je suis ambitieux(se) et j'aime relever des défis.</option>
+    <option value="I">Je suis convivial(e) et j'aime les interactions sociales.</option>
+    <option value="S">J'ai tendance à être calme et patient(e).</option>
+    <option value="C">Je suis analytique et je vérifie les détails méticuleusement.</option>
+</select>
+
+<!-- Question 5 -->
+<label for="q5">Question 5 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q5">
+    <option value="D">Je prends souvent l'initiative dans les situations de groupe.</option>
+    <option value="I">J'aime convaincre les autres de mes idées.</option>
+    <option value="S">Je suis généralement réservé(e) et j'aime la stabilité.</option>
+    <option value="C">Je suis prudent(e) et j'applique des normes élevées.</option>
+</select>
+
+<!-- Question 6 -->
+<label for="q6">Question 6 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q6">
+    <option value="D">Je suis orienté(e) vers les résultats et je suis compétitif(ve).</option>
+    <option value="I">Je suis sociable et j'aime organiser des événements sociaux.</option>
+    <option value="S">Je suis loyal(e) et j'aime la cohésion du groupe.</option>
+    <option value="C">Je suis prudent(e) dans mes décisions et j'aime la précision.</option>
+</select>
+
+<!-- Continuez avec les questions suivantes, q7, q8, etc. -->
+<!-- Question 7 -->
+<label for="q7">Question 7 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q7">
+    <option value="D">Je suis déterminé(e) à obtenir des résultats concrets.</option>
+    <option value="I">Je suis persuasif(ve) et j'aime influencer les autres.</option>
+    <option value="S">Je suis paisible et j'aime maintenir l'harmonie.</option>
+    <option value="C">Je suis systématique et j'aime suivre des procédures.</option>
+</select>
+
+<!-- Question 8 -->
+<label for="q8">Question 8 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q8">
+    <option value="D">J'aime prendre le contrôle des situations.</option>
+    <option value="I">Je suis chaleureux(se) et j'aime créer des liens personnels.</option>
+    <option value="S">Je suis stable et j'aime la prévisibilité.</option>
+    <option value="C">Je suis organisé(e) et j'aime structurer les informations.</option>
+</select>
+
+<!-- Question 9 -->
+<label for="q9">Question 9 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q9">
+    <option value="D">Je suis orienté(e) vers les objectifs et j'aime relever des défis.</option>
+    <option value="I">J'aime inspirer et motiver les autres.</option>
+    <option value="S">Je suis compréhensif(ve) et j'aime écouter les autres.</option>
+    <option value="C">Je suis rigoureux(se) et j'aime suivre des procédures établies.</option>
+</select>
+
+<!-- Continuez avec les questions suivantes, q10, q11, etc. -->
+<!-- Question 10 -->
+<label for="q10">Question 10 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q10">
+    <option value="D">Je suis compétitif(ve) et j'aime les défis.</option>
+    <option value="I">Je suis enthousiaste et j'aime motiver les autres.</option>
+    <option value="S">Je suis patient(e) et j'aime maintenir l'harmonie.</option>
+    <option value="C">Je suis attentif(ve) aux détails et j'aime suivre des règles.</option>
+</select>
+
+<!-- Question 11 -->
+<label for="q11">Question 11 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q11">
+    <option value="D">Je suis déterminé(e) à réussir et j'aime la compétition.</option>
+    <option value="I">Je suis optimiste et j'aime divertir les autres.</option>
+    <option value="S">Je suis loyal(e) et j'aime la stabilité.</option>
+    <option value="C">Je suis méthodique et j'aime les procédures bien définies.</option>
+</select>
+
+<!-- Question 12 -->
+<label for="q12">Question 12 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q12">
+    <option value="D">Je suis exigeant(e) et j'aime les résultats rapides.</option>
+    <option value="I">Je suis charismatique et j'aime influencer les autres.</option>
+    <option value="S">Je suis paisible et j'aime maintenir un environnement calme.</option>
+    <option value="C">Je suis scrupuleux(se) et j'aime les procédures détaillées.</option>
+</select>
+
+<!-- Continuez avec les questions suivantes, q13, q14, etc. -->
+<!-- Question 13 -->
+<label for="q13">Question 13 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q13">
+    <option value="D">Je suis compétitif(ve) et j'aime prendre des risques.</option>
+    <option value="I">Je suis amical(e) et j'aime les interactions sociales.</option>
+    <option value="S">Je suis stable et j'aime la prévisibilité.</option>
+    <option value="C">Je suis précis(e) et j'aime les procédures.</option>
+</select>
+
+<!-- Question 14 -->
+<label for="q14">Question 14 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q14">
+    <option value="D">Je suis déterminé(e) à atteindre mes objectifs, peu importe les obstacles.</option>
+    <option value="I">Je suis expressif(ve) et j'aime inspirer les autres.</option>
+    <option value="S">Je suis calme et j'aime la stabilité.</option>
+    <option value="C">Je suis détaillé(e) et j'aime suivre des procédures strictes.</option>
+</select>
+
+<!-- Question 15 -->
+<label for="q15">Question 15 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q15">
+    <option value="D">Je suis persuasif(ve) et j'aime convaincre les autres.</option>
+    <option value="I">Je suis enthousiaste et j'aime les nouvelles expériences.</option>
+    <option value="S">Je suis compréhensif(ve) et j'aime aider les autres.</option>
+    <option value="C">Je suis analytique et j'aime la précision.</option>
+</select>
+
+<!-- Continuez avec les questions suivantes, q16, q17, etc. -->
+<!-- Question 16 -->
+<label for="q16">Question 16 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q16">
+    <option value="D">Je suis déterminé(e) à atteindre mes objectifs, peu importe les obstacles.</option>
+    <option value="I">Je suis influent(e) et j'aime persuader les autres.</option>
+    <option value="S">Je suis patient(e) et j'aime la stabilité.</option>
+    <option value="C">Je suis méticuleux(se) et j'aime les procédures bien établies.</option>
+</select>
+
+<!-- Question 17 -->
+<label for="q17">Question 17 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q17">
+    <option value="D">Je suis direct(e) et j'aime prendre le contrôle.</option>
+    <option value="I">Je suis chaleureux(se) et j'aime créer des liens.</option>
+    <option value="S">Je suis pacifique et j'aime la prévisibilité.</option>
+    <option value="C">Je suis attentif(ve) aux détails et j'aime les procédures précises.</option>
+</select>
+
+<!-- Question 18 -->
+<label for="q18">Question 18 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q18">
+    <option value="D">Je suis ambitieux(se) et j'aime les défis.</option>
+    <option value="I">Je suis charismatique et j'aime motiver les autres.</option>
+    <option value="S">Je suis compréhensif(ve) et j'aime maintenir l'harmonie.</option>
+    <option value="C">Je suis prudent(e) et j'aime les procédures détaillées.</option>
+</select>
+
+<!-- Continuez avec les questions suivantes, q19, q20, etc. -->
+<!-- Question 19 -->
+<label for="q19">Question 19 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q19">
+    <option value="D">Je suis ambitieux(se) et j'aime les défis professionnels.</option>
+    <option value="I">Je suis enthousiaste et j'aime divertir les autres.</option>
+    <option value="S">Je suis attentif(ve) et j'aime maintenir l'harmonie.</option>
+    <option value="C">Je suis méthodique et j'aime les procédures strictes.</option>
+</select>
+
+<!-- Question 20 -->
+<label for="q20">Question 20 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q20">
+    <option value="D">Je suis audacieux(se) et j'aime les prises de risque.</option>
+    <option value="I">Je suis sociable et j'aime interagir avec les autres.</option>
+    <option value="S">Je suis calme et j'aime la prévisibilité.</option>
+    <option value="C">Je suis précis(e) et j'aime suivre des procédures strictes.</option>
+</select>
+
+<!-- Question 21 -->
+<label for="q21">Question 21 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q21">
+    <option value="D">Je suis déterminé(e) à atteindre mes objectifs.</option>
+    <option value="I">Je suis expressif(ve) et j'aime influencer les autres.</option>
+    <option value="S">Je suis stable et j'aime la prévisibilité.</option>
+    <option value="C">Je suis prudent(e) et j'aime les procédures détaillées.</option>
+</select>
+
+<!-- Continuez avec les questions suivantes, q22, q23, et la dernière question q24. -->
+<!-- Question 22 -->
+<label for="q22">Question 22 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q22">
+    <option value="D">Je suis ambitieux(se) et j'aime les défis.</option>
+    <option value="I">Je suis enthousiaste et j'aime interagir avec les autres.</option>
+    <option value="S">Je suis patient(e) et j'aime la stabilité.</option>
+    <option value="C">Je suis attentif(ve) aux détails et j'aime les procédures bien définies.</option>
+</select>
+
+<!-- Question 23 -->
+<label for="q23">Question 23 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q23">
+    <option value="D">Je suis déterminé(e) à réussir et j'aime la compétition.</option>
+    <option value="I">Je suis persuasif(ve) et j'aime influencer les autres.</option>
+    <option value="S">Je suis calme et j'aime la prévisibilité.</option>
+    <option value="C">Je suis précis(e) et j'aime les procédures strictes.</option>
+</select>
+
+<!-- Question 24 -->
+<label for="q24">Question 24 : Choisissez la réponse qui vous décrit le mieux.</label>
+<select id="q24">
+    <option value="D">Je suis déterminé(e) à obtenir des résultats concrets.</option>
+    <option value="I">Je suis sociable et j'aime organiser des événements sociaux.</option>
+    <option value="S">Je suis loyal(e) et j'aime la cohésion du groupe.</option>
+    <option value="C">Je suis prudent(e) dans mes décisions et j'aime la précision.</option>
+</select>
+
+        <button type="button" id="calculate-button">Calculer</button>
+    </form>
+
+    <div id="results">
+        <!-- Les résultats seront affichés ici -->
+    </div>
+
+    <script>
+        // Ajoutez votre JavaScript ici pour calculer et afficher les résultats
+        document.getElementById("calculate-button").addEventListener("click", function () {
+            // Récupérez les réponses aux questions
+            const q1 = document.getElementById("q1").value;
+            const q2 = document.getElementById("q2").value;
+            const q3 = document.getElementById("q3").value;
+            const q4 = document.getElementById("q4").value;
+            const q5 = document.getElementById("q5").value;
+            const q6 = document.getElementById("q6").value; 
+            const q7 = document.getElementById("q7").value;
+            const q8 = document.getElementById("q8").value;
+            const q9 = document.getElementById("q9").value;
+            const q10 = document.getElementById("q10").value;
+            const q11 = document.getElementById("q11").value;
+            const q12 = document.getElementById("q12").value;
+            const q13 = document.getElementById("q13").value;
+            const q14 = document.getElementById("q14").value;
+            const q15 = document.getElementById("q15").value;
+            const q16 = document.getElementById("q16").value;
+            const q17 = document.getElementById("q17").value;
+            const q18 = document.getElementById("q18").value;
+            const q19 = document.getElementById("q19").value;
+            const q20 = document.getElementById("q20").value;
+            const q21 = document.getElementById("q21").value;
+            const q22 = document.getElementById("q22").value;
+            const q23 = document.getElementById("q23").value;
+            const q24 = document.getElementById("q24").value;
+
+            // Calculez les résultats en fonction des réponses aux questions
+            const results = {
+                D: 0,
+                I: 0,
+                S: 0,
+                C: 0
+            };
+
+            results[q1]++;
+            results[q2]++;
+            results[q3]++;
+            results[q4]++;
+            results[q5]++;
+            results[q6]++;
+            results[q7]++;
+            results[q8]++;
+            results[q9]++;
+            results[q10]++;
+            results[q11]++;
+            results[q12]++;
+            results[q13]++;
+            results[q14]++;
+            results[q15]++;
+            results[q16]++;
+            results[q17]++;
+            results[q18]++;
+            results[q19]++;
+            results[q20]++;
+            results[q21]++;
+            results[q22]++;
+            results[q23]++;
+            results[q24]++;
+
+            // Affichez les résultats dans la div "results"
+            const resultDiv = document.getElementById("results");
+            resultDiv.innerHTML = `
+                <h2>Résultats du test DISC</h2>
+                <p>Dominance (D) : ${results.D}</p>
+                <p>Influence (I) : ${results.I}</p>
+                <p>Stabilité (S) : ${results.S}</p>
+                <p>Conformité (C) : ${results.C}</p>
+                <img src="disc.png" alt="disc" loading="lazy">
+            `;
+        });
+    </script>
+</body>
+</html>
